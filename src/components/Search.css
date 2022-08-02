@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.label {
+  padding: 15px 100px 15px 20px;
+  border: 1px solid white;
+  background-color: #fff;
+  box-shadow: -1px 1px 1px -1px;
+  border-radius: 5px;
+}
+
+.input {
+  margin-left: 20px;
+  border: none;
+}
+
+.select {
+  padding: 15px 30px 15px 20px;
+  border: 1px solid white;
+  background-color: #fff;
+  box-shadow: -1px 1px 1px -1px;
+  border-radius: 5px;
+}
