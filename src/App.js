@@ -7,7 +7,7 @@ import {useState} from "react";
 
 function App() {
 
-  const [countries, ] = useState([
+  const [countries, setCountries] = useState([
     {
       id: 1,
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/2560px-Flag_of_Germany.svg.png",
