@@ -14,7 +14,6 @@ function App() {
       <Header/>
       <div className="container">
       <Search/>
-      
     </div>
     </div>
   );

@@ -60,13 +60,10 @@ const Search = () => {
         </select>
       </div>
 
-      <h1>{value}</h1>
-
       <ul className="cardList">
-        {todos.length
-          ? todos.map((e) => (
+        {todos.length ? todos.map((e) => (
               <Card
-                key={e.id}
+                key={e.name.common}
                 name={e.name.common}
                 population={e.population}
                 src={e.flags.png}
