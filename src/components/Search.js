@@ -1,12 +1,15 @@
-import "./Search.css";
+import "./Search.scss";
 import SearchImg from "../img/search.png";
 import Card from "./Card";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Search = () => {
   const [todos, setTodos] = useState([]);
   const [value, setValue] = useState("");
   const [region, setRegion] = useState("");
+
+  const {theme} = useContext(ThemeContext);
 
   useEffect(() => {
     if (value.length) {
@@ -28,7 +31,7 @@ const Search = () => {
   }, [value, region]);
 
   return (
-    <div>
+    <div className={theme}>
       <div className="form">
         <label className="label">
           <img src={SearchImg} alt="search img" width="20" height="20" />
@@ -62,7 +65,7 @@ const Search = () => {
 
       <ul className="cardList">
         {todos.length ? todos.map((e) => (
-              <Card
+              <Card 
                 key={e.name.common}
                 name={e.name.common}
                 population={e.population}
